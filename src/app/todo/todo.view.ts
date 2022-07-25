@@ -11,8 +11,6 @@ import { TodoService } from '../todo.service';
         <div class="box-content flexible">
           <input type="text" class="todo-input-field" placeholder="Enter a todo" autofocus="" [(ngModel)]="todo.title"
                  (keyup.enter)="addTodo()">
-          <!--          <ng-datepicker class="datepicker" [(ngModel)]="date" (click)="newDate()"-->
-          <!--                         (keyup.enter)="addTodo()"></ng-datepicker>-->
         </div>
       </div>
       <div>
@@ -49,10 +47,6 @@ export class TodoView {
       });
       this.todo = {} as Todo;
     }
-  }
-
-  newDate(): void {
-    this.date = new Date();
   }
 
   updateTodo(todo: Todo): void {
