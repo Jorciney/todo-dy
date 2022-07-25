@@ -25,6 +25,7 @@
   font-family: 'Montserrat-Regular';
   src: url("./assets/fonts/Montserrat-Regular.ttf");
 }
+
 html {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -53,8 +54,8 @@ body {
 .box-4 {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   position: relative;
-  width: 80%;
-  margin: 20px 0 0 40px;
+  width: 90%;
+  margin-left: 5%;
 }
 
 .box-content {
@@ -62,6 +63,7 @@ body {
   position: relative;
   z-index: 1;
 }
+
 .box-4:after {
   border-radius: 0 0 50% 50% / 0 0 20px 20px;
   bottom: 0;

@@ -17,11 +17,10 @@ import { Component } from '@angular/core';
     }
     .header-title {
       font-family: Bariol-Regular, SansSerif, sans-serif;
+      text-align: center;
       font-size: 15rem;
       font-weight: 500;
       color: rgba(255, 248, 241, 0.58);
-      padding-left: 12vw;
-      width: 80%;
     }
   `]
 })
