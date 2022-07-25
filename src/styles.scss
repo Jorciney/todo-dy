@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+/*BASE COLORS*/
+/*#e6af4b*/
+/*#e05038*/
+/*#f2cbbc*/
+/*#334431*/
+@font-face {
+  font-family: 'Bariol-Regular';
+  src: url("./assets/fonts/bariol_regular-webfont.woff");
+}
+
+@font-face {
+  font-family: 'Bariol-Italic';
+  src: url("./assets/fonts/bariol_regular_italic-webfont.woff");
+}
+
+@font-face {
+  font-family: 'Montserrat-Italic';
+  src: url("./assets/fonts/Montserrat-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #e6af4b;
+}
+
+body {
+  margin: 0;
+}
+
+.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/****************************************************************
+*styling shadows
+****************************************************************/
+
+.box *:last-child {
+  margin-bottom: 0;
+}
+
+.box-4 {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  position: relative;
+  width: 80%;
+  margin: 20px 0 0 40px;
+}
+
+.box-content {
+  background: #f3f3f3 none repeat scroll 0 0;
+  position: relative;
+  z-index: 1;
+}
+.box-4:after {
+  border-radius: 0 0 50% 50% / 0 0 20px 20px;
+  bottom: 0;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  content: "";
+  height: 20px;
+  left: 10px;
+  position: absolute;
+  right: 10px;
+}
