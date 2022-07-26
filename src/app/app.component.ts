@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <div class="content">
       <div class="header-title">TodoDy</div>
-      <app-todo-view></app-todo-view>
+      <app-todo-view class="todo-view"></app-todo-view>
     </div>
   `,
   styles: [`
@@ -13,14 +13,30 @@ import { Component } from '@angular/core';
       margin: 0 auto;
       box-sizing: border-box;
       padding: 0;
-      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
+
     .header-title {
       font-family: Bariol-Regular, SansSerif, sans-serif;
       text-align: center;
-      font-size: 15rem;
+      font-size: calc(10em + 3vmin);
       font-weight: 500;
       color: rgba(255, 248, 241, 0.58);
+    }
+
+    .todo-view{
+      width: 60%;
+    }
+    @media only screen and (max-width: 500px) {
+      .header-title {
+        font-size: 5em;
+      }
+      .todo-view{
+        width: 100%;
+      }
     }
   `]
 })

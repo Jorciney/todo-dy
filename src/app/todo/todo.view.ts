@@ -31,7 +31,6 @@ import { TodoService } from '../todo.service';
 export class TodoView {
   todo = {} as Todo;
   todoList = this.todoService.todos$;
-  date?: Date;
 
   constructor(private readonly todoService: TodoService,
               private readonly datePipe: DatePipe
@@ -42,7 +41,7 @@ export class TodoView {
     if (this.todo.title?.trim()) {
       this.todoService.addTodo({
         ...this.todo,
-        date: this.datePipe.transform(this.date, 'dd-MM-yyy') || '',
+        date: this.datePipe.transform(new Date(), 'dd-MM-yyy') || '',
         id: new Date().getTime()
       });
       this.todo = {} as Todo;
