@@ -39,7 +39,7 @@
           "configurations": {
             "production": {
               "optimization": true,
-              "baseHref": "/",
+              "baseHref": "/todo-dy/",
               "budgets": [
                 {
                   "type": "initial",
