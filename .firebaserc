@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "todo-dy": {
+      "hosting": {
+        "todo-dy": [
+          "todo-dy"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "todo-dy"
+  }
+}
