@@ -14,7 +14,7 @@ import { Todo } from '../model/todo';
         </div>
       </div>
       <div *ngIf="isHovered" class="bin-container">
-        <input class="delete-todo" alt="Delete" type="image" src="../../assets/images/delete-button.svg"
+        <input class="delete-todo" alt="Delete" type="image" src="assets/images/delete-button.svg"
                (click)="delete.emit(this.todo?.id)"/>
       </div>
     </div>
